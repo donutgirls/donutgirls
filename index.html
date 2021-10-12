@@ -12,77 +12,98 @@
 <link rel="mask-icon" href="img/icon/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
 </head>
 <body>
-<div>
- <div>
- <a href="#home">Donuts and pastries</a>
- <div>
- <a href="#about">About</a>
- <a href="#menu">Menu</a>
- <a href="#contact">Contact</a>
- </div>
- </div>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button w3-hide-small">Donuts and pastries</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
 </div>
-<header>
-<div>
- <div>
- <div>
- <img src="img/marzipan.png" alt="marzipan" width="600" height="750">
- </div>
- <div>
- <h1>About Donut Girls</h1><br>
- <center><img src="img/logo.png" alt="logo" width="100"/></center><br>
- <h5>Tradition since 2019</h5>
- <p> We are a homebased licensed business that produces the authentic Pasteis de Nata, most known as Portuguese tarts. Thierry's background is Portuguese, Lived and worked as a baker in Portugal for serveral years, so we decided to make and open the only Real Pasteis de Nata in Canberra. Both trained by Portuguese bakers we bring you sweets that your tooth craves. We also produce other sweets and deserts.
-   Why we are called Donut Girls? Our dog is called Donut and Jamie decided to open a bakery, so we named it Donut girls. 
- So If you love sweets, we've got you covered.</p>
- </div>
- </div>
- <hr>
- <div>
- <div>
- <h1>Our Menu</h1><br>
- <h4>Pasteis de nata</h4>
- <p>6 genuine Portuguese tarts $20.00</p><br>
- <h4>Coconut bread </h4>
- <p>A box containing 4 thick slices $15.00</p><br>
- <h4>Box of Spiced Chai tea infused tart </h4>
- <p>A box with 6 infused chai tarts $25.00</p><br>
- <h4>Apple cinnamon tart </h4>
- <p>A pack of 6 tarts $20.00</p><br>
-   <h4>Box of White choc red velvet lamington </h4>
-   <p>A box with 2 big lamingtons $15</p><br>
-   <h4>Signature dessert box </h4>
-   <p>Comes with 2 Slices of Coconut bread, 2 Gluten-Free Banana Muffins, 4 Pasteis de nata, linguas de chat. $45 </p><br>
- <h4>A box of Gluten-free banana muffins</h4>
- <p>A box with 4 Muffins $18.00</p><br>
-  <h4>A box of DirtyBombs</h4>
- <p>A box with 4 exposive chocolate croissant $25.00</p><br>
-   <h4>Box of Biscoff Blondies</h4>
-   <p>Comes with 2 big Slices $18</p><br>
-   <h4>Red Velvet Cupcakes</h4>
-   <p>Comes with 6 delicious red velvet cupcakes with vanilla frosting $20</p><br> 
-   </p>
-   </h4>
-   </p>
-   </h4>
- </div>
- <div>
- <img src="img/cake3.jpg" alt="Menu"><br><br>
- <img src="img/fraise.jpg" alt="Menu">
- </div>
- </div>
- <hr>
- <div>
- <h1>Contact</h1><br>
-<p>Find us on social media: <a href="https://www.facebook.com/Doughnut.girls/">Facebook</a> &amp; <a href="https://instagram.com/doughnut.girls">Instagram</a></p>
- <p><b>E-mail: donutgirls.baking@gmail.com</b></p>
- <p>We accept orders trough facebook and by phone: (Jamie) 0490551009 or (Thierry : 0403245702)</p>
- </div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="img/front.png" alt="logo" width="1600" height="800">
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="img/marzipan.png" class="w3-round w3-image" alt="marzipan" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">About Donut Girls</h1><br>
+	   <center><img src="img/logo.png" class="w3-xxlarge"  alt="logo" width="100"/></center><br>
+      <h5 class="w3-center">Tradition since 2019</h5>
+      <p class="w3-large">" We are a homebased licensed business that produces the authentic Pasteis de Nata, most known as Portuguese tarts. With my husbands background being Portuguese, 
+	  we decided to make the only Real Pasteis de Nata. Both trained by Portuguese bakers we bring you sweets that your tooth craves. We also produce other sweets and deserts." 
+	  If you like sweets, we've got you covered.</p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Our Menu</h1><br>
+      <h4>Pasteis de nata</h4>
+      <p class="w3-text-grey">6 genuine Portuguese tarts 20.00$</p><br>
+ 
+      <h4>Coconut bread </h4>
+      <p class="w3-text-grey">A box containing 5 thick slices 14.00$</p><br>
+    
+      <h4>Chiffon vanilla cake</h4>
+      <p class="w3-text-grey">A  box with approximate 500gr. 15.00$</p><br>
+    
+      <h4>Apple cinnamon tart </h4>
+      <p class="w3-text-grey">A pack of 6 tarts 20.00$</p><br>
+    
+      <h4>Bolas de Berlin</h4>
+      <p class="w3-text-grey">A box with 2 bolas 10.00$</p>    
+    </div>
+    
+    <div class="w3-col l6 w3-padding-large">
+      <img src="img/cake3.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%"><br><br>
+	  <img src="img/fraise.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-64" id="contact">
+    <h1>Contact</h1><br>
+	<p>Find us on social media: <a href="https://www.facebook.com/Doughnut.girls/">Facebook</a> &amp; <a href="https://instagram.com/doughnut.girls">Instagram</a></p>
+    <p><b>E-mail: donutgirls.baking@gmail.com</b></p>
+    <p class="w3-text-blue-grey w3-large">We accept orders trough facebook and by phone: (Jamie) 0490551009 or (Thierry : 0403245702)</p>
+  </div>
+  
+<!-- End page content -->
 </div>
-<footer>
- <p>Decentralised blockchain websites by <a href="http://com.xentrium.hns.to" title="W3.CSS" target="_blank">Xentrium</a></p>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p>Decentralised blockchain websites by <a href="http://com.xentrium.hns.to" title="W3.CSS" target="_blank" class="w3-hover-text-green">Xentrium</a></p>
 </footer>
+
 </body>
 </html>
